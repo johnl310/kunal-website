@@ -1,0 +1,31 @@
+  <footer class="border-t border-slate-200 dark:border-slate-800 mt-20">
+    <div class="max-w-5xl mx-auto px-6 py-10 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-slate-500 dark:text-slate-400">
+      <div class="flex items-center gap-6">
+        <a href="/" class="hover:text-amber-600 dark:hover:text-amber-400 transition-colors">Home</a>
+        <a href="/about.html" class="hover:text-amber-600 dark:hover:text-amber-400 transition-colors">About</a>
+        <a href="/services.html" class="hover:text-amber-600 dark:hover:text-amber-400 transition-colors">Services</a>
+        <a href="/contact.html" class="hover:text-amber-600 dark:hover:text-amber-400 transition-colors">Contact</a>
+      </div>
+      <p>&copy; 2026 Kunal Ahuja. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Theme toggle
+    document.getElementById('theme-toggle').addEventListener('click', function() {
+      document.documentElement.classList.toggle('dark');
+      localStorage.theme = document.documentElement.classList.contains('dark') ? 'dark' : 'light';
+    });
+
+    // Active nav link highlighting
+    (function() {
+      var path = window.location.pathname;
+      if (path.endsWith('/index.html') || path === '/') path = '/';
+      document.querySelectorAll('[data-nav]').forEach(function(link) {
+        if (link.getAttribute('data-nav') === path) {
+          link.classList.add('text-amber-600', 'dark:text-amber-400', 'font-semibold');
+          link.classList.remove('text-slate-600', 'dark:text-slate-300');
+        }
+      });
+    })();
+  </script>

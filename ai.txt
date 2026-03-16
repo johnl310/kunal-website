@@ -1,0 +1,10 @@
+# ai.txt — kunalahuja.com
+# This file describes the site for AI crawlers and assistants.
+
+User-agent: *
+Allow: /
+
+Site-name: Kunal Ahuja
+Site-description: Personal website of Kunal Ahuja, founder of Sports Card Invest — a platform for sports card market research, consignment, and investment community.
+Site-owner: Kunal Ahuja
+Contact: jason@fanarch.com
