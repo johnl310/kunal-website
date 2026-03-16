@@ -8,3 +8,51 @@ Site-name: Kunal Ahuja
 Site-description: Personal website of Kunal Ahuja, founder of Sports Card Invest — a platform for sports card market research, consignment, and investment community.
 Site-owner: Kunal Ahuja
 Contact: jason@fanarch.com
+
+## About
+Kunal Ahuja is a Bay Area entrepreneur who founded Sports Card Invest in 2019 at age 18. The platform delivers data-backed sports card investment research, portfolio management, and consignment services. Members have historically averaged 60% monthly returns following weekly pick reports.
+
+## Services
+- **Membership tiers**: Deluxe ($199.99/yr), Platinum ($695/yr), Ultra High-End ($1,999/yr), Portfolio Management ($1,500)
+- **Weekly picks**: 23 in-depth card picks per week across basketball, football, baseball, hockey, and soccer
+- **Consignment**: Full-service card consignment through Fanatics Collect partnership — evaluation, logistics, marketing, and direct payouts
+- **Portfolio management**: Strategic collection review, sell optimization, and buyer matching
+
+## Content Types
+- Bi-weekly investment reports (email, exclusive to members)
+- Free Monday picks on Instagram (@sportscardinvest)
+- YouTube video breakdowns and market updates (@sportscards)
+- Podcast episodes on Spotify (Sports Card Invest by Kunal Ahuja via Fan Arch)
+- Audiobook on Amazon Audible
+
+## Publishing Schedule
+- **Sundays at 7PM EST**: Premium email picks for Deluxe, Platinum, and Ultra High-End members
+- **Mondays at 5PM EST**: Free picks on Instagram
+- **Weekly**: YouTube videos and podcast episodes
+- **Daily**: Instagram content on @sportscardinvest (1,500+ posts to date)
+
+## Partnerships
+- **Fanatics Collect**: Official consignment partner for selling graded and raw cards at top market value
+- **Fan Arch**: Media network with 70+ daily shows covering sports cards, athlete news, and collectible trends
+- **HobbyScan**: Card scanning and identification technology partner
+
+## Audience
+- Sports card collectors and investors at all experience levels
+- Portfolio sizes ranging from sub-$5K (Deluxe) to $50K+ (Ultra High-End)
+- Primarily US-based, focused on NBA, NFL, MLB, NHL, and soccer cards
+- 47K+ Instagram followers, 1,300+ paid members, 200,000+ total social following
+
+## Key Statistics
+- 23 picks per week delivered to members
+- 90% of analysis is exclusive to paid members
+- 60% historical average monthly returns for members following picks
+- 1,300+ paid members acquired within first 3 months of launch
+- 6+ years operating in the sports card market (since 2019)
+- 1,500+ posts published on Instagram
+- 47K+ Instagram followers on @sportscardinvest
+
+## Pages
+- / — Homepage with overview, stats, testimonials, and ecosystem
+- /about.html — Kunal's background, origin story, partnerships, and investment philosophy
+- /services.html — Membership tiers, pricing, comparison table, consignment details, and FAQ
+- /contact.html — Contact form, social links, and business inquiry information
