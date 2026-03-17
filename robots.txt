@@ -1,7 +1,7 @@
 User-agent: *
 Allow: /
 Crawl-delay: 1
-Sitemap: https://kunalahuja.com/sitemap.xml
+Sitemap: https://kunal-ahuja.com/sitemap.xml
 
 # AI / LLM Crawlers
 User-agent: GPTBot
@@ -35,5 +35,5 @@ User-agent: Bytespider
 Allow: /
 
 # AI-readable content
-# llms.txt: https://kunalahuja.com/llms.txt
-# ai.txt: https://kunalahuja.com/ai.txt
+# llms.txt: https://kunal-ahuja.com/llms.txt
+# ai.txt: https://kunal-ahuja.com/ai.txt
