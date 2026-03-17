@@ -2,3 +2,38 @@ User-agent: *
 Allow: /
 Crawl-delay: 1
 Sitemap: https://kunalahuja.com/sitemap.xml
+
+# AI / LLM Crawlers
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Anthropic-AI
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Cohere-AI
+Allow: /
+
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+# AI-readable content
+# llms.txt: https://kunalahuja.com/llms.txt
+# ai.txt: https://kunalahuja.com/ai.txt

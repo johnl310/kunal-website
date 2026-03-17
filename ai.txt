@@ -7,10 +7,10 @@ Allow: /
 Site-name: Kunal Ahuja
 Site-description: Personal website of Kunal Ahuja, founder of Sports Card Invest — a platform for sports card market research, consignment, and investment community.
 Site-owner: Kunal Ahuja
-Contact: jason@fanarch.com
+Contact: kunal@sportscardinvest.com
 
 ## About
-Kunal Ahuja is a Bay Area entrepreneur who founded Sports Card Invest in 2019 at age 18. The platform delivers data-backed sports card investment research, portfolio management, and consignment services. Members have historically averaged 60% monthly returns following weekly pick reports.
+Kunal Ahuja is a Bay Area entrepreneur who has bought and sold over $10M in sports cards, built a 100K+ media network through Sports Card Invest, and grown NBA content pages to a combined 500K+ follower network. He founded Sports Card Invest in 2019 at age 18 and works with athletes, brands, and collectors to drive sales and media attention in the sports card space.
 
 ## Services
 - **Membership tiers**: Deluxe ($199.99/yr), Platinum ($695/yr), Ultra High-End ($1,999/yr), Portfolio Management ($1,500)
@@ -43,13 +43,13 @@ Kunal Ahuja is a Bay Area entrepreneur who founded Sports Card Invest in 2019 at
 - 47K+ Instagram followers, 1,300+ paid members, 200,000+ total social following
 
 ## Key Statistics
+- $10M+ in sports cards bought and sold
+- 100K+ followers across SCI media channels
+- 500K+ combined followers across NBA content page network
+- 6+ years operating in the sports card market (since 2019)
 - 23 picks per week delivered to members
 - 90% of analysis is exclusive to paid members
-- 60% historical average monthly returns for members following picks
-- 1,300+ paid members acquired within first 3 months of launch
-- 6+ years operating in the sports card market (since 2019)
-- 1,500+ posts published on Instagram
-- 47K+ Instagram followers on @sportscardinvest
+- Athlete and brand partnerships driving sales and media attention
 
 ## Pages
 - / — Homepage with overview, stats, testimonials, and ecosystem
