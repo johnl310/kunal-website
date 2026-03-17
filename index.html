@@ -128,28 +128,12 @@
           </a>
         </div>
       </div>
-      <div class="flex-shrink-0">
-        <div class="w-56 h-56 sm:w-64 sm:h-64 rounded-2xl ring-4 ring-amber-500/20 shadow-2xl overflow-hidden relative" id="hero-carousel">
-          <div class="flex transition-transform duration-1000 ease-in-out h-full" id="hero-track">
-            <img src="/assets/kunal_portrait.jpeg" alt="Kunal Ahuja at NBA All-Star event" class="w-56 h-56 sm:w-64 sm:h-64 flex-shrink-0 object-cover" style="object-position: center 30%;" width="256" height="256" fetchpriority="high">
-            <img src="/assets/kunal_will_steph.jpeg?v=2" alt="Kunal Ahuja with athletes at Fanatics Collect event" class="w-56 h-56 sm:w-64 sm:h-64 flex-shrink-0 object-cover object-center" width="256" height="256" loading="lazy">
-            <img src="/assets/kunal_aoki.jpeg" alt="Kunal Ahuja with Steve Aoki at Panini event" class="w-56 h-56 sm:w-64 sm:h-64 flex-shrink-0 object-cover object-center" width="256" height="256" loading="lazy">
-            <img src="/assets/kunal_pat.jpeg" alt="Kunal Ahuja with Pat McAfee" class="w-56 h-56 sm:w-64 sm:h-64 flex-shrink-0 object-cover object-center" width="256" height="256" loading="lazy">
-          </div>
+      <div class="flex-shrink-0" style="margin-top: 50px;">
+        <div class="w-56 h-56 sm:w-64 sm:h-64 rounded-2xl ring-4 ring-amber-500/20 shadow-2xl overflow-hidden">
+          <img src="/assets/kunal_portrait.jpeg" alt="Kunal Ahuja at NBA All-Star event" class="w-full h-full object-cover" style="object-position: center 30%;" width="256" height="256" fetchpriority="high">
         </div>
       </div>
     </section>
-    <script>
-      (function() {
-        var track = document.getElementById('hero-track');
-        var current = 0;
-        var total = 4;
-        setInterval(function() {
-          current = (current + 1) % total;
-          track.style.transform = 'translateX(-' + (current * 100) + '%)';
-        }, 4000);
-      })();
-    </script>
 
     <!-- Stats -->
     <section aria-labelledby="stats-heading" class="grid grid-cols-2 sm:grid-cols-4 gap-4 py-8 border-y border-slate-200 dark:border-slate-800">
