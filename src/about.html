@@ -45,6 +45,68 @@
 
     <h1 class="text-3xl sm:text-4xl font-bold text-slate-900 dark:text-white mb-8">About Kunal Ahuja</h1>
 
+    <!-- Photo Carousel -->
+    <section aria-labelledby="gallery-heading" class="mb-12">
+      <h2 id="gallery-heading" class="sr-only">Media &amp; Sports Connections</h2>
+      <div class="relative overflow-hidden rounded-2xl" role="region" aria-roledescription="carousel" aria-label="Photos of Kunal with athletes and at events">
+        <div id="carousel-track" class="flex transition-transform duration-500 ease-in-out">
+          <div class="w-full flex-shrink-0">
+            <img src="/assets/kunal_portrait.jpeg" alt="Kunal Ahuja at NBA All-Star event" class="w-full h-72 sm:h-96 object-cover object-top" loading="eager">
+            <p class="text-xs text-slate-600 dark:text-slate-400 mt-2 text-center">NBA All-Star Weekend</p>
+          </div>
+          <div class="w-full flex-shrink-0">
+            <img src="/assets/kunal_aoki.jpeg" alt="Kunal Ahuja with Steve Aoki at a Panini sports card event" class="w-full h-72 sm:h-96 object-cover object-top" loading="lazy">
+            <p class="text-xs text-slate-600 dark:text-slate-400 mt-2 text-center">With Steve Aoki at Panini</p>
+          </div>
+          <div class="w-full flex-shrink-0">
+            <img src="/assets/kunal_pat.jpeg" alt="Kunal Ahuja with Pat McAfee at a sports card event" class="w-full h-72 sm:h-96 object-cover object-top" loading="lazy">
+            <p class="text-xs text-slate-600 dark:text-slate-400 mt-2 text-center">With Pat McAfee</p>
+          </div>
+          <div class="w-full flex-shrink-0">
+            <img src="/assets/kunal_will_steph.jpeg" alt="Kunal Ahuja with athletes at a Fanatics event" class="w-full h-72 sm:h-96 object-cover object-center" loading="lazy">
+            <p class="text-xs text-slate-600 dark:text-slate-400 mt-2 text-center">Fanatics Collect Event</p>
+          </div>
+        </div>
+        <!-- Navigation buttons -->
+        <button id="carousel-prev" aria-label="Previous photo" class="absolute left-2 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/80 dark:bg-slate-900/80 backdrop-blur-sm border border-slate-200 dark:border-slate-700 flex items-center justify-center text-slate-700 dark:text-slate-300 hover:bg-white dark:hover:bg-slate-800 transition-colors shadow-lg">
+          <svg class="w-5 h-5" aria-hidden="true" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5"/></svg>
+        </button>
+        <button id="carousel-next" aria-label="Next photo" class="absolute right-2 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/80 dark:bg-slate-900/80 backdrop-blur-sm border border-slate-200 dark:border-slate-700 flex items-center justify-center text-slate-700 dark:text-slate-300 hover:bg-white dark:hover:bg-slate-800 transition-colors shadow-lg">
+          <svg class="w-5 h-5" aria-hidden="true" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5"/></svg>
+        </button>
+        <!-- Dots -->
+        <div class="flex justify-center gap-2 mt-3" role="tablist" aria-label="Carousel slides">
+          <button class="carousel-dot w-2 h-2 rounded-full bg-amber-600 dark:bg-amber-400" role="tab" aria-selected="true" aria-label="Slide 1"></button>
+          <button class="carousel-dot w-2 h-2 rounded-full bg-slate-300 dark:bg-slate-600" role="tab" aria-selected="false" aria-label="Slide 2"></button>
+          <button class="carousel-dot w-2 h-2 rounded-full bg-slate-300 dark:bg-slate-600" role="tab" aria-selected="false" aria-label="Slide 3"></button>
+          <button class="carousel-dot w-2 h-2 rounded-full bg-slate-300 dark:bg-slate-600" role="tab" aria-selected="false" aria-label="Slide 4"></button>
+        </div>
+      </div>
+      <script>
+        (function() {
+          var track = document.getElementById('carousel-track');
+          var dots = document.querySelectorAll('.carousel-dot');
+          var current = 0;
+          var total = 4;
+          function goTo(i) {
+            current = (i + total) % total;
+            track.style.transform = 'translateX(-' + (current * 100) + '%)';
+            dots.forEach(function(dot, idx) {
+              dot.classList.toggle('bg-amber-600', idx === current);
+              dot.classList.toggle('dark:bg-amber-400', idx === current);
+              dot.classList.toggle('bg-slate-300', idx !== current);
+              dot.classList.toggle('dark:bg-slate-600', idx !== current);
+              dot.setAttribute('aria-selected', idx === current);
+            });
+          }
+          document.getElementById('carousel-prev').addEventListener('click', function() { goTo(current - 1); });
+          document.getElementById('carousel-next').addEventListener('click', function() { goTo(current + 1); });
+          dots.forEach(function(dot, idx) { dot.addEventListener('click', function() { goTo(idx); }); });
+          setInterval(function() { goTo(current + 1); }, 5000);
+        })();
+      </script>
+    </section>
+
     <!-- Origin Story -->
     <section aria-labelledby="origin" class="mb-12">
       <h2 id="origin" class="text-2xl font-bold text-slate-900 dark:text-white mb-4">How It Started</h2>
@@ -69,7 +131,7 @@
           I launched Sports Card Invest in 2019 at 18 years old, while still in college. The early days were pure grind — posting 8 to 10 times a day across platforms, often to almost no engagement. It took roughly 500 posts before things started to click.
         </p>
         <p>
-          Within three months, over 1,300 people paid to join the membership. The program went viral among investors because the research was real and the returns spoke for themselves — members averaged 60% monthly returns following the weekly reports.
+          Within three months, over 1,300 people paid to join the membership. The program went viral among investors because the research was real and the returns spoke for themselves — members saw strong, consistent gains following the weekly reports during the 2020–2021 sports card boom.
         </p>
         <p>
           During summer breaks, I was putting in 6 to 10 hour days — market research, content creation, order processing, community management — all at once. The work ethic never changed.
@@ -100,19 +162,25 @@
     <section aria-labelledby="partnerships" class="mb-12">
       <h2 id="partnerships" class="text-2xl font-bold text-slate-900 dark:text-white mb-4">Partnerships</h2>
       <div class="grid sm:grid-cols-3 gap-4">
-        <a href="https://fanarch.com" target="_blank" rel="noopener" class="p-4 rounded-lg bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 hover:border-amber-400 dark:hover:border-amber-500 transition-colors group">
-          <h3 class="font-semibold text-sm text-slate-900 dark:text-white mb-1 group-hover:text-amber-600 dark:group-hover:text-amber-400 transition-colors">Fan Arch</h3>
-          <p class="text-xs text-slate-600 dark:text-slate-400">Media network with 70+ daily shows covering sports, cards, and collectible culture.</p>
+        <a href="https://fanarch.com" target="_blank" rel="noopener" class="p-4 rounded-lg bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 hover:border-amber-400 dark:hover:border-amber-500 transition-colors group">
+          <div class="flex items-center justify-center h-10 mb-2">
+            <img src="/assets/fanarch-logo.png" alt="Fan Arch" class="h-6 w-auto object-contain">
+          </div>
+          <p class="text-xs text-slate-400 text-center">Media network with 70+ daily shows covering sports, cards, and collectible culture.</p>
           <span class="sr-only">(opens in a new tab)</span>
         </a>
-        <a href="https://www.fanatics.com/collectors" target="_blank" rel="noopener" class="p-4 rounded-lg bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 hover:border-amber-400 dark:hover:border-amber-500 transition-colors group">
-          <h3 class="font-semibold text-sm text-slate-900 dark:text-white mb-1 group-hover:text-amber-600 dark:group-hover:text-amber-400 transition-colors">Fanatics Collect</h3>
-          <p class="text-xs text-slate-600 dark:text-slate-400">Consignment partner for selling high-end graded and raw cards at top value.</p>
+        <a href="https://www.fanatics.com/collectors" target="_blank" rel="noopener" class="p-4 rounded-lg bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 hover:border-amber-400 dark:hover:border-amber-500 transition-colors group">
+          <div class="flex items-center justify-center h-10 mb-2">
+            <img src="/assets/fanatics-logo.jpg" alt="Fanatics Collect" class="h-10 w-auto object-contain rounded">
+          </div>
+          <p class="text-xs text-slate-400 text-center">Consignment partner for selling high-end graded and raw cards at top value.</p>
           <span class="sr-only">(opens in a new tab)</span>
         </a>
-        <div class="p-4 rounded-lg bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
-          <h3 class="font-semibold text-sm text-slate-900 dark:text-white mb-1">HobbyScan</h3>
-          <p class="text-xs text-slate-600 dark:text-slate-400">Card scanning and identification technology partner.</p>
+        <div class="p-4 rounded-lg bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
+          <div class="flex items-center justify-center h-10 mb-2">
+            <img src="/assets/hobbyscan-logo.png" alt="HobbyScan" class="h-8 w-auto object-contain">
+          </div>
+          <p class="text-xs text-slate-400 text-center">Card scanning and identification technology partner.</p>
         </div>
       </div>
     </section>
