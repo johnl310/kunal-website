@@ -88,68 +88,6 @@
 
     <h1 class="text-3xl sm:text-4xl font-bold text-slate-900 dark:text-white mb-8">About Kunal Ahuja</h1>
 
-    <!-- Photo Carousel -->
-    <section aria-labelledby="gallery-heading" class="mb-12">
-      <h2 id="gallery-heading" class="sr-only">Media &amp; Sports Connections</h2>
-      <div class="relative overflow-hidden rounded-2xl" role="region" aria-roledescription="carousel" aria-label="Photos of Kunal with athletes and at events">
-        <div id="carousel-track" class="flex transition-transform duration-500 ease-in-out">
-          <div class="w-full flex-shrink-0">
-            <img src="/assets/kunal_portrait.jpeg" alt="Kunal Ahuja at NBA All-Star event" class="w-full h-72 sm:h-96 object-cover object-top" loading="eager">
-            <p class="text-xs text-slate-600 dark:text-slate-400 mt-2 text-center">NBA All-Star Weekend</p>
-          </div>
-          <div class="w-full flex-shrink-0">
-            <img src="/assets/kunal_aoki.jpeg" alt="Kunal Ahuja with Steve Aoki at a Panini sports card event" class="w-full h-72 sm:h-96 object-cover object-top" loading="lazy">
-            <p class="text-xs text-slate-600 dark:text-slate-400 mt-2 text-center">With Steve Aoki at Panini</p>
-          </div>
-          <div class="w-full flex-shrink-0">
-            <img src="/assets/kunal_pat.jpeg" alt="Kunal Ahuja with Pat McAfee at a sports card event" class="w-full h-72 sm:h-96 object-cover object-top" loading="lazy">
-            <p class="text-xs text-slate-600 dark:text-slate-400 mt-2 text-center">With Pat McAfee</p>
-          </div>
-          <div class="w-full flex-shrink-0">
-            <img src="/assets/kunal_will_steph.jpeg" alt="Kunal Ahuja with athletes at a Fanatics event" class="w-full h-72 sm:h-96 object-cover object-center" loading="lazy">
-            <p class="text-xs text-slate-600 dark:text-slate-400 mt-2 text-center">Fanatics Collect Event</p>
-          </div>
-        </div>
-        <!-- Navigation buttons -->
-        <button id="carousel-prev" aria-label="Previous photo" class="absolute left-2 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/80 dark:bg-slate-900/80 backdrop-blur-sm border border-slate-200 dark:border-slate-700 flex items-center justify-center text-slate-700 dark:text-slate-300 hover:bg-white dark:hover:bg-slate-800 transition-colors shadow-lg">
-          <svg class="w-5 h-5" aria-hidden="true" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5"/></svg>
-        </button>
-        <button id="carousel-next" aria-label="Next photo" class="absolute right-2 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/80 dark:bg-slate-900/80 backdrop-blur-sm border border-slate-200 dark:border-slate-700 flex items-center justify-center text-slate-700 dark:text-slate-300 hover:bg-white dark:hover:bg-slate-800 transition-colors shadow-lg">
-          <svg class="w-5 h-5" aria-hidden="true" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5"/></svg>
-        </button>
-        <!-- Dots -->
-        <div class="flex justify-center gap-2 mt-3" role="tablist" aria-label="Carousel slides">
-          <button class="carousel-dot w-2 h-2 rounded-full bg-amber-600 dark:bg-amber-400" role="tab" aria-selected="true" aria-label="Slide 1"></button>
-          <button class="carousel-dot w-2 h-2 rounded-full bg-slate-300 dark:bg-slate-600" role="tab" aria-selected="false" aria-label="Slide 2"></button>
-          <button class="carousel-dot w-2 h-2 rounded-full bg-slate-300 dark:bg-slate-600" role="tab" aria-selected="false" aria-label="Slide 3"></button>
-          <button class="carousel-dot w-2 h-2 rounded-full bg-slate-300 dark:bg-slate-600" role="tab" aria-selected="false" aria-label="Slide 4"></button>
-        </div>
-      </div>
-      <script>
-        (function() {
-          var track = document.getElementById('carousel-track');
-          var dots = document.querySelectorAll('.carousel-dot');
-          var current = 0;
-          var total = 4;
-          function goTo(i) {
-            current = (i + total) % total;
-            track.style.transform = 'translateX(-' + (current * 100) + '%)';
-            dots.forEach(function(dot, idx) {
-              dot.classList.toggle('bg-amber-600', idx === current);
-              dot.classList.toggle('dark:bg-amber-400', idx === current);
-              dot.classList.toggle('bg-slate-300', idx !== current);
-              dot.classList.toggle('dark:bg-slate-600', idx !== current);
-              dot.setAttribute('aria-selected', idx === current);
-            });
-          }
-          document.getElementById('carousel-prev').addEventListener('click', function() { goTo(current - 1); });
-          document.getElementById('carousel-next').addEventListener('click', function() { goTo(current + 1); });
-          dots.forEach(function(dot, idx) { dot.addEventListener('click', function() { goTo(idx); }); });
-          setInterval(function() { goTo(current + 1); }, 5000);
-        })();
-      </script>
-    </section>
-
     <!-- Origin Story -->
     <section aria-labelledby="origin" class="mb-12">
       <h2 id="origin" class="text-2xl font-bold text-slate-900 dark:text-white mb-4">How It Started</h2>
@@ -166,6 +104,11 @@
       </div>
     </section>
 
+    <figure class="mb-12 rounded-2xl overflow-hidden">
+      <img src="/assets/kunal_will_steph.jpeg" alt="Kunal Ahuja with Steph Curry at Fanatics Collect event" class="w-full h-72 sm:h-96 object-cover object-center" loading="lazy" width="800" height="384">
+      <figcaption class="text-xs text-slate-600 dark:text-slate-400 mt-2 text-center">Fanatics Collect Event</figcaption>
+    </figure>
+
     <!-- Building SCI -->
     <section aria-labelledby="building" class="mb-12">
       <h2 id="building" class="text-2xl font-bold text-slate-900 dark:text-white mb-4">Building Sports Card Invest</h2>
@@ -181,6 +124,11 @@
         </p>
       </div>
     </section>
+
+    <figure class="mb-12 rounded-2xl overflow-hidden">
+      <img src="/assets/kunal_aoki.jpeg" alt="Kunal Ahuja with Steve Aoki at Panini sports card event" class="w-full h-72 sm:h-96 object-cover object-top" loading="lazy" width="800" height="384">
+      <figcaption class="text-xs text-slate-600 dark:text-slate-400 mt-2 text-center">With Steve Aoki at Panini</figcaption>
+    </figure>
 
     <!-- Today -->
     <section aria-labelledby="today" class="mb-12">
@@ -200,6 +148,11 @@
         </p>
       </div>
     </section>
+
+    <figure class="mb-12 rounded-2xl overflow-hidden">
+      <img src="/assets/kunal_pat.jpeg" alt="Kunal Ahuja with Pat McAfee at a sports card event" class="w-full h-72 sm:h-96 object-cover object-top" loading="lazy" width="800" height="384">
+      <figcaption class="text-xs text-slate-600 dark:text-slate-400 mt-2 text-center">With Pat McAfee</figcaption>
+    </figure>
 
     <!-- Partnerships -->
     <section aria-labelledby="partnerships" class="mb-12">
