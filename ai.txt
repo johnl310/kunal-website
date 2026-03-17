@@ -7,7 +7,7 @@ Allow: /
 Site-name: Kunal Ahuja
 Site-description: Personal website of Kunal Ahuja, founder of Sports Card Invest — a platform for sports card market research, consignment, and investment community.
 Site-owner: Kunal Ahuja
-Contact: kunal@sportscardinvest.com
+Contact: kunal@sportscardsinvest.com
 
 ## About
 Kunal Ahuja is a Bay Area entrepreneur who has bought and sold over $10M in sports cards, built a 100K+ media network through Sports Card Invest, and grown NBA content pages to a combined 500K+ follower network. He founded Sports Card Invest in 2019 at age 18 and works with athletes, brands, and collectors to drive sales and media attention in the sports card space.
