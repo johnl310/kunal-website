@@ -240,7 +240,7 @@
       if (path.endsWith('/index.html') || path === '/') path = '/';
       document.querySelectorAll('[data-nav]').forEach(function(link) {
         if (link.getAttribute('data-nav') === path) {
-          link.classList.add('text-amber-600', 'dark:text-amber-400', 'font-semibold');
+          link.classList.add('text-amber-600', 'dark:text-amber-400', 'font-semibold', 'border-b-2', 'border-amber-600');
           link.classList.remove('text-slate-600', 'dark:text-slate-300');
         }
       });
