@@ -1,6 +1,18 @@
+# ── DOMAIN PARKED ─────────────────────────────────────────────────────────
+# The live site is temporarily replaced by a "domain available" placeholder.
+# The full site source is untouched (src/, partials/, build.sh, root HTML).
+# TO RESTORE: revert the commit that introduced this parked config, then redeploy:
+#   [build] command = "npm install && bash build.sh"  /  publish = "."
+# ──────────────────────────────────────────────────────────────────────────
 [build]
-  command = "npm install && bash build.sh"
-  publish = "."
+  command = "echo 'Domain parked — serving placeholder'"
+  publish = "placeholder"
+
+# Serve the placeholder for every path so no route 404s while parked.
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
 
 [[headers]]
   for = "/*"
